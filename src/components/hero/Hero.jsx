@@ -19,10 +19,10 @@ export default function Hero() {
           className="mt-36 bg-gradient-to-br from-slate-300 to-slate-500 pb-16 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
         >
           RONIN PRODUCTIONS <br />
-          <p className="text-5xl">
+          <div className="text-5xl">
             offre le meilleur{" "}
             <FlipWords words={words} className={"text-white"} />
-          </p>
+          </div>
         </motion.h1>
       </LampContainer>
     </div>
