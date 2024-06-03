@@ -21,7 +21,7 @@ export default function Hero() {
           RONIN PRODUCTIONS <br />
           <div className="text-5xl">
             offre le meilleur{" "}
-            <FlipWords words={words} className={"text-white"} duration={1300} />
+            <FlipWords words={words} className={"text-white"} duration={1100} />
           </div>
         </motion.h1>
       </LampContainer>
