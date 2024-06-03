@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    color: white;
+  }
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.woff2");
+  font-display: swap;
+}
+
+.nav-link {
+  /* Ajoutez vos styles personnalisés ici */
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(31, 41, 55, 0.9); /* Utilisation de la couleur de fond avec une légère transparence */
+}
