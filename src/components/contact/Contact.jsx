@@ -10,7 +10,7 @@ export default function Contact() {
       <h1 className="text-white text-4xl font-bold text-start my-8 mb-16">
         NOS INFORMATIONS
       </h1>
-      <div className="flex justify-between items-start md:flex-row flex-col">
+      <div className="flex justify-between md:items-start gap-10 items-center md:flex-row flex-col">
         <div className="flex flex-col justify-start items-start gap-6">
           <h2 className="text-2xl ">Contact</h2>
           <Info icon={email} email="sales@ronintek.com" />

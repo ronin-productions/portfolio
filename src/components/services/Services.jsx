@@ -21,7 +21,7 @@ export default function Services() {
                 className="mx-auto"
               />
               <h2 className="text-xl font-bold text-white">{service.title}</h2>
-              <p className=" text-gray-500 text-sm">{service.description}</p>
+              <p className=" text-gray-400 text-sm">{service.description}</p>
             </BackgroundGradient>
           ))}
         </div>
