@@ -2,7 +2,7 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid.jsx";
 
 export default function Projects() {
   return (
-    <div id="projets" className="mt-36">
+    <div id="projets" className="pt-36">
       <h1 className="text-white text-4xl font-bold text-start my-8">
         NOS PROJETS
       </h1>

@@ -3,7 +3,7 @@ import { BackgroundGradient } from "@/components/ui/background-gradient";
 export default function Services() {
   return (
     <>
-      <div id="services" className="mt-36">
+      <div id="services" className="pt-32">
         <h1 className="text-white text-4xl font-bold text-start my-8">
           NOS SERVICES
         </h1>

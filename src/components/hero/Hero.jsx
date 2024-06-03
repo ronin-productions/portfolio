@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { LampContainer } from "@/components/ui/lamp";
 import { FlipWords } from "@/components/ui/flip-words";
 
-const words = ["service", "produit", "design", "marketing", "modélisation"];
+const words = ["services", "produits", "designs", "marketing", "modélisations"];
 
 export default function Hero() {
   return (
@@ -16,11 +16,12 @@ export default function Hero() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-36 bg-gradient-to-br from-slate-300 to-slate-500 pb-16 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+          className="text-center font-medium text-transparent text-4xl md:text-7xl
+          bg-clip-text tracking-tight bg-gradient-to-br from-slate-300 to-slate-500"
         >
           RONIN PRODUCTIONS <br />
           <div className="text-5xl">
-            offre le meilleur{" "}
+            offre les meilleurs{" "}
             <FlipWords words={words} className={"text-white"} duration={1100} />
           </div>
         </motion.h1>
