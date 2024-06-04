@@ -20,7 +20,7 @@ export default function Hero() {
           bg-clip-text tracking-tight bg-gradient-to-br from-slate-300 to-slate-500"
         >
           RONIN PRODUCTIONS <br />
-          <div className="text-6xl">
+          <div className="md:text-6xl text-2xl">
             offre les meilleurs{" "}
             <FlipWords words={words} className={"text-white"} duration={1100} />
           </div>
