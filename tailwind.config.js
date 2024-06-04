@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('./src/assets/bg.png')",
+        hero: "url('/bg.png')",
       },
       screens: {
         md: "860px",
