@@ -16,11 +16,11 @@ export default function Hero() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="text-center font-medium text-transparent text-4xl md:text-7xl
+          className="text-center font-medium text-transparent text-4xl md:text-8xl pt-32
           bg-clip-text tracking-tight bg-gradient-to-br from-slate-300 to-slate-500"
         >
           RONIN PRODUCTIONS <br />
-          <div className="text-5xl">
+          <div className="text-6xl">
             offre les meilleurs{" "}
             <FlipWords words={words} className={"text-white"} duration={1100} />
           </div>
@@ -28,4 +28,4 @@ export default function Hero() {
       </LampContainer>
     </div>
   );
-}
+} 

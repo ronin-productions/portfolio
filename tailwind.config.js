@@ -4,6 +4,9 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      backgroundImage: {
+        'hero': "url('./src/assets/bgx10_png.png')",
+      },
       screens: {
         md: "860px",
         "3xl": "1735px",
