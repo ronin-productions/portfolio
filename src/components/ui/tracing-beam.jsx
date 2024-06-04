@@ -1,16 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import {
-  motion,
-  useTransform,
-  useScroll,
-  useSpring,
-} from "framer-motion";
+import { motion, useTransform, useScroll, useSpring } from "framer-motion";
 import { cn } from "@/utils/cn.js";
 
-export const TracingBeam = ({
-  children,
-  className,
-}) => {
+export const TracingBeam = ({ children, className, rerender }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -24,7 +16,7 @@ export const TracingBeam = ({
     if (contentRef.current) {
       setSvgHeight(contentRef.current.offsetHeight);
     }
-  }, []);
+  }, [rerender]);
 
   const y1 = useSpring(
     useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),

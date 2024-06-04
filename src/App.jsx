@@ -7,17 +7,19 @@ import Projects from "@/components/projects/Projects";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/footer/Footer";
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
+import { useState } from "react";
 
 function App() {
+  const [rerender, setRerender] = useState(false);
   return (
     <div className=" bg-bleuish w-full h-full">
       <Navbar />
       <Hero />
-      <TracingBeam className="px-6">
+      <TracingBeam className="px-6" rerender={rerender}>
         <div className="antialiased pt-4 relative h-full">
           <About />
           <Services />
-          <Projects />
+          <Projects setRerender={setRerender} />
           <Contact />
         </div>
       </TracingBeam>
