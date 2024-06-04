@@ -23,7 +23,7 @@ export default function Navbar() {
   }, []);
 
   let navbarClasses =
-    "sticky top-0 z-50 mx-auto 3xl:px-56 2xl:px-36 xl:px-16 lg:px-10 px-8 py-4 flex items-center 2xl:gap-72 xl:gap-44 lg:gap-36 md:gap-20 xl:text-xl lg:text-lg";
+    "sticky top-0 z-50 mx-auto  2xl:px-44 xl:px-16 lg:px-10 px-8 py-4 flex items-center 2xl:gap-72 xl:gap-44 lg:gap-36 md:gap-20 xl:text-xl lg:text-lg";
   if (scrolled) {
     navbarClasses += " navbar scrolled";
   }

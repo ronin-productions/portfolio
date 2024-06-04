@@ -50,7 +50,7 @@ export default function Projects({ setRerender }) {
           )
         )}
       </div>
-      <BentoGrid className="max-w-5xl mx-auto ">
+      <BentoGrid className="max-w-7xl mx-auto ">
         {filteredItems.map((item, i) => (
           <BentoGridItem
             key={i}
@@ -58,7 +58,7 @@ export default function Projects({ setRerender }) {
             description={item.description}
             header={item.header}
             icon={item.icon}
-            className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+            className={i === 2 || i === 7 ? "md:col-span-2" : ""}
           />
         ))}
       </BentoGrid>
@@ -111,6 +111,24 @@ const items = [
     title: "The Spirit of Développement Web",
     description: "Embark on exciting journeys and thrilling discoveries.",
     category: "Développement Web",
+    header: <Skeleton />,
+  },
+  {
+    title: "The Dawn of audiovisuel",
+    description: "Explore the birth of groundbreaking ideas and inventions.",
+    category: "audiovisuel",
+    header: <Skeleton />,
+  },
+  {
+    title: "The Digital Revolution",
+    description: "Dive into the transformative power of technology.",
+    category: "Modélisation 3D",
+    header: <Skeleton />,
+  },
+  {
+    title: "The Art of Design Graphique",
+    description: "Discover the beauty of thoughtful and functional design.",
+    category: "Design Graphique",
     header: <Skeleton />,
   },
 ];
