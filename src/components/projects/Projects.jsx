@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid.jsx";
 import { useState } from "react";
 

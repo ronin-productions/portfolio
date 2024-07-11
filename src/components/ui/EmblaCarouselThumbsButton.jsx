@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 export const Thumb = ({ selected, index, onClick, image }) => {
   return (
     <div
