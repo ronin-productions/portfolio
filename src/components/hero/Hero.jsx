@@ -6,7 +6,7 @@ const words = ["services", "produits", "designs", "marketing", "modélisations"]
 
 export default function Hero() {
   return (
-    <div id="acceuil">
+    <div id="acceuil" className="">
       <LampContainer>
         <motion.h1
           initial={{ opacity: 0.5, y: 100 }}

@@ -50,13 +50,14 @@ export default function Projects({ setRerender }) {
           )
         )}
       </div>
-      <BentoGrid className="max-w-7xl mx-auto ">
+      <BentoGrid className="max-w-7xl mx-auto">
         {filteredItems.map((item, i) => (
           <BentoGridItem
             key={i}
             title={item.title}
             description={item.description}
             header={item.header}
+            images={item.images}
             icon={item.icon}
             className={i === 2 || i === 7 ? "md:col-span-2" : ""}
           />
@@ -66,69 +67,85 @@ export default function Projects({ setRerender }) {
   );
 }
 
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
+import beetle from "@/assets/images/beetle.jpg";
+import beetle1 from "@/assets/images/beetle1.jpg";
+import beetle2 from "@/assets/images/beetle2.jpg";
+import beetle3 from "@/assets/images/beetle3.jpg";
+import beetle4 from "@/assets/images/beetle4.jpg";
+import beetle5 from "@/assets/images/beetle5.jpg";
+import beetle6 from "@/assets/images/beetle6.jpg";
+import beetle7 from "@/assets/images/beetle7.jpg";
+
+import girrafe from "@/assets/images/girrafe.jpg";
+import girrafe1 from "@/assets/images/girrafe1.jpg";
+import girrafe2 from "@/assets/images/girrafe2.jpg";
+import girrafe3 from "@/assets/images/girrafe3.jpg";
+import girrafe4 from "@/assets/images/girrafe4.jpg";
+
+import raccoon from "@/assets/images/raccoon.jpg";
+import raccoon1 from "@/assets/images/raccoon1.jpg";
+import raccoon2 from "@/assets/images/raccoon2.jpg";
+import raccoon3 from "@/assets/images/raccoon3.jpg";
+import raccoon4 from "@/assets/images/raccoon4.jpg";
+
+import ahmed from "@/assets/images/ahmed.jpg";
+import ahmed1 from "@/assets/images/ahmed1.jpg";
+import ahmed2 from "@/assets/images/ahmed2.jpg";
+import ahmed3 from "@/assets/images/ahmed3.jpg";
+
+import ahmedV from "@/assets/images/ahmedV.jpg";
+import ahmedV1 from "@/assets/images/ahmedV1.jpg";
+import ahmedV2 from "@/assets/images/ahmedV2.jpg";
+
 const items = [
   {
-    title: "The Dawn of audiovisuel",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    category: "audiovisuel",
-    header: <Skeleton />,
-  },
-  {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    category: "Modélisation 3D",
-    header: <Skeleton />,
-  },
-  {
-    title: "The Art of Design Graphique",
-    description: "Discover the beauty of thoughtful and functional design.",
-    category: "Design Graphique",
-    header: <Skeleton />,
-  },
-  {
-    title: "The Power of VFX",
+    title: "Transforming Beetle",
     description:
-      "Understand the impact of effective communication in our lives.",
-    category: "VFX",
-    header: <Skeleton />,
-  },
-  {
-    title: "The Pursuit of ARCHVIZ",
-    description: "Join the quest for understanding and enlightenment.",
-    category: "ARCHVIZ",
-    header: <Skeleton />,
-  },
-  {
-    title: "The Joy of filmmaking",
-    description: "Experience the thrill of bringing ideas to life.",
-    category: "filmmaking",
-    header: <Skeleton />,
-  },
-  {
-    title: "The Spirit of Développement Web",
-    description: "Embark on exciting journeys and thrilling discoveries.",
-    category: "Développement Web",
-    header: <Skeleton />,
-  },
-  {
-    title: "The Dawn of audiovisuel",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+      " A stylized beetle vehicle concept design with a twist, inspired by the classic Volkswagen Beetle.",
     category: "audiovisuel",
-    header: <Skeleton />,
+    header: <img src={beetle} className="h-56 object-fit" alt="beetle" />,
+    images: [
+      beetle,
+      beetle1,
+      beetle2,
+      beetle3,
+      beetle4,
+      beetle5,
+      beetle6,
+      beetle7,
+    ],
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    category: "Modélisation 3D",
-    header: <Skeleton />,
-  },
-  {
-    title: "The Art of Design Graphique",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "Facial rig test for a stylized giraffe",
+    description:
+      "A facial rig test for a stylized giraffe character, exploring the possibilities of facial expressions.",
     category: "Design Graphique",
-    header: <Skeleton />,
+    header: <img src={girrafe} className="h-56 object-fit" alt="girrafe" />,
+    images: [girrafe, girrafe1, girrafe2, girrafe3, girrafe4],
+  },
+  {
+    title: "Stylized raccoon character",
+    description:
+      "A stylized raccoon character design, exploring the possibilities of character design.",
+    category: "Modélisation 3D",
+    header: <img src={raccoon} className="h-56 object-fit" alt="raccoon" />,
+    images: [raccoon, raccoon1, raccoon2, raccoon3, raccoon4],
+  },
+
+  {
+    title: "Character creation process",
+    description:
+      "A character creation process, exploring the possibilities of character design.",
+    category: "VFX",
+    header: <img src={ahmed} className="h-56 object-fit" alt="ahmed" />,
+    images: [ahmed, ahmed1, ahmed2, ahmed3],
+  },
+  {
+    title: "Character creation process2",
+    description:
+      "A character creation process, exploring the possibilities of character design.",
+    category: "ARCHVIZ",
+    header: <img src={ahmedV} className="h-56 object-fit" alt="ahmedV" />,
+    images: [ahmedV, ahmedV1, ahmedV2],
   },
 ];

@@ -11,7 +11,7 @@ export default function Services() {
           {ServicesContent.map((service) => (
             <BackgroundGradient
               key={service.id}
-              className="bg-secondary p-5 text-center flex flex-col justify-start gap-4 w-full h-full rounded-2xl"
+              className="bg-secondary p-5 text-center flex flex-col justify-start gap-4 w-full h-full rounded-2xl cursor-pointer"
             >
               <img
                 src={service.icon}
