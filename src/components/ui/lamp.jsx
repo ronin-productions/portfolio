@@ -8,11 +8,11 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex md:h-[57rem] md:-mt-0 h-[60rem] -mt-16 flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0",
-        className
+        "relative flex md:h-[57rem] md:-mt-0 h-screen -mt-16 flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0 bg-hero  bg-no-repeat bg-center bg-cover",
+        className 
       )}
     >
-      <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
+      <div className="relative flex flex-1 scale-y-125 items-center justify-center isolate z-0 mt-36">
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
           whileInView={{ opacity: 1, width: "30rem" }}
@@ -48,16 +48,7 @@ export const LampContainer = ({
         <div className="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-slate-950 blur-2xl"></div>
         <div className="absolute top-1/2 z-50 h-48 w-full bg-transparent opacity-10 backdrop-blur-md"></div>
         <div className="absolute inset-auto z-50 h-36 w-[28rem] -translate-y-1/2 rounded-full bg-cyan-500 opacity-50 blur-3xl"></div>
-        <motion.div
-          initial={{ width: "8rem" }}
-          whileInView={{ width: "16rem" }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-          className="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-cyan-400 blur-2xl"
-        ></motion.div>
+        
         <motion.div
           initial={{ width: "15rem" }}
           whileInView={{ width: "30rem" }}
@@ -72,7 +63,7 @@ export const LampContainer = ({
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "></div>
       </div>
 
-      <div className="relative z-50 flex -translate-y-[29rem] -ta flex-col items-center px-5">
+      <div className="relative z-50 flex -translate-y-[25rem]  flex-col items-center px-5">
         {children}
       </div>
     </div>
