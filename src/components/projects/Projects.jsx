@@ -59,6 +59,7 @@ export default function Projects({ setRerender }) {
             description={item.description}
             header={item.header}
             images={item.images}
+            url={item.url}
             icon={item.icon}
             className={i === 2 || i === 7 ? "md:col-span-2" : ""}
           />
@@ -98,13 +99,22 @@ import ahmedV from "@/assets/images/ahmedV.jpg";
 import ahmedV1 from "@/assets/images/ahmedV1.jpg";
 import ahmedV2 from "@/assets/images/ahmedV2.jpg";
 
+import nightrod from "@/assets/images/nightrod.jpg";
+import nightrod1 from "@/assets/images/nightrod1.jpg";
+import nightrod2 from "@/assets/images/nightrod2.jpg";
+import nightrod3 from "@/assets/images/nightrod3.jpg";
+import nightrod4 from "@/assets/images/nightrod4.jpg";
+import nightrod5 from "@/assets/images/nightrod5.jpg";
+import nightrod6 from "@/assets/images/nightrod6.jpg";
+
 const items = [
   {
     title: "Transforming Beetle",
     description:
       " A stylized beetle vehicle concept design with a twist, inspired by the classic Volkswagen Beetle.",
-    category: "audiovisuel",
+    category: "Modélisation 3D",
     header: <img src={beetle} className="h-44 object-fit" alt="beetle" />,
+    url: "https://khaled_3dx.artstation.com/projects/Alz3ky",
     images: [
       beetle,
       beetle1,
@@ -120,8 +130,11 @@ const items = [
     title: "Facial rig test for a stylized giraffe",
     description:
       "A facial rig test for a stylized giraffe character, exploring the possibilities of facial expressions.",
-    category: "Design Graphique",
-    header: <img src={girrafe} className="h-44 object-fit w-full" alt="girrafe" />,
+    category: "Modélisation 3D",
+    header: (
+      <img src={girrafe} className="h-44 object-fit w-full" alt="girrafe" />
+    ),
+    url: "https://khaled_3dx.artstation.com/projects/5v3G2z",
     images: [girrafe, girrafe1, girrafe2, girrafe3, girrafe4],
   },
   {
@@ -129,7 +142,10 @@ const items = [
     description:
       "A stylized raccoon character design, exploring the possibilities of character design.",
     category: "Modélisation 3D",
-    header: <img src={raccoon} className="h-44 object-fit w-full" alt="raccoon" />,
+    header: (
+      <img src={raccoon} className="h-44 object-fit w-full" alt="raccoon" />
+    ),
+    url: "https://khaled_3dx.artstation.com/projects/xDke3m",
     images: [raccoon, raccoon1, raccoon2, raccoon3, raccoon4],
   },
 
@@ -137,16 +153,37 @@ const items = [
     title: "Character creation process",
     description:
       "A character creation process, exploring the possibilities of character design.",
-    category: "VFX",
+    category: "Modélisation 3D",
     header: <img src={ahmed} className="h-44 object-fit w-full" alt="ahmed" />,
+    url: "https://khaled_3dx.artstation.com/projects/obGB6B",
     images: [ahmed, ahmed1, ahmed2, ahmed3],
   },
   {
     title: "Character creation process2",
     description:
       "A character creation process, exploring the possibilities of character design.",
-    category: "ARCHVIZ",
-    header: <img src={ahmedV} className="h-44 object-fit w-full" alt="ahmedV" />,
+    category: "Modélisation 3D",
+    header: (
+      <img src={ahmedV} className="h-44 object-fit w-full" alt="ahmedV" />
+    ),
+    url: "https://khaled_3dx.artstation.com/projects/qeJA9R",
     images: [ahmedV, ahmedV1, ahmedV2],
+  },
+  {
+    title: "Harley Davidson Nightrod",
+    description:
+      " 3D Nightrod motorcycle on Maya using different references.",
+    category: "Modélisation 3D",
+    header: <img src={nightrod} className="h-44 object-fit" alt="nightrod" />,
+    url: "https://khaled_3dx.artstation.com/projects/nQP6A1",
+    images: [
+      nightrod,
+      nightrod1,
+      nightrod2,
+      nightrod3,
+      nightrod4,
+      nightrod5,
+      nightrod6,
+    ],
   },
 ];
