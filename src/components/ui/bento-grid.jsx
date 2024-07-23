@@ -36,13 +36,13 @@ export const BentoGridItem = ({
       <Modal className="">
         <ModalTrigger
           className={cn(
-            "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input shadow-none p-4 border-white/[0.2] bg-secondary border justify-between flex flex-col space-y-4 cursor-pointer h-72",
+            "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input shadow-none p-4 border-white/[0.2] bg-secondary border justify-between flex flex-col cursor-pointer h-72",
             className
           )}
         >
           {header}
           <div className="group-hover/bento:translate-x-2 transition duration-200 text-start">
-            <div className="font-sans font-bold text-neutral-200 mb-2 mt-2">
+            <div className="font-sans font-bold text-neutral-200 mb-1 mt-2">
               {title}
             </div>
             <div className="font-sans font-normal text-xs text-neutral-300">

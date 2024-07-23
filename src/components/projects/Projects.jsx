@@ -104,7 +104,7 @@ const items = [
     description:
       " A stylized beetle vehicle concept design with a twist, inspired by the classic Volkswagen Beetle.",
     category: "audiovisuel",
-    header: <img src={beetle} className="h-56 object-fit" alt="beetle" />,
+    header: <img src={beetle} className="h-44 object-fit" alt="beetle" />,
     images: [
       beetle,
       beetle1,
@@ -121,7 +121,7 @@ const items = [
     description:
       "A facial rig test for a stylized giraffe character, exploring the possibilities of facial expressions.",
     category: "Design Graphique",
-    header: <img src={girrafe} className="h-56 object-fit" alt="girrafe" />,
+    header: <img src={girrafe} className="h-44 object-fit w-full" alt="girrafe" />,
     images: [girrafe, girrafe1, girrafe2, girrafe3, girrafe4],
   },
   {
@@ -129,7 +129,7 @@ const items = [
     description:
       "A stylized raccoon character design, exploring the possibilities of character design.",
     category: "Modélisation 3D",
-    header: <img src={raccoon} className="h-56 object-fit" alt="raccoon" />,
+    header: <img src={raccoon} className="h-44 object-fit w-full" alt="raccoon" />,
     images: [raccoon, raccoon1, raccoon2, raccoon3, raccoon4],
   },
 
@@ -138,7 +138,7 @@ const items = [
     description:
       "A character creation process, exploring the possibilities of character design.",
     category: "VFX",
-    header: <img src={ahmed} className="h-56 object-fit" alt="ahmed" />,
+    header: <img src={ahmed} className="h-44 object-fit w-full" alt="ahmed" />,
     images: [ahmed, ahmed1, ahmed2, ahmed3],
   },
   {
@@ -146,7 +146,7 @@ const items = [
     description:
       "A character creation process, exploring the possibilities of character design.",
     category: "ARCHVIZ",
-    header: <img src={ahmedV} className="h-56 object-fit" alt="ahmedV" />,
+    header: <img src={ahmedV} className="h-44 object-fit w-full" alt="ahmedV" />,
     images: [ahmedV, ahmedV1, ahmedV2],
   },
 ];
