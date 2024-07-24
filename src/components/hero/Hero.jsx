@@ -14,7 +14,7 @@ export default function Hero() {
         loop
         controls={false}
         background
-        className="w-screen h-screen object-cover object-center top-0 left-0"
+        className=" mb-16"
         responsive
       />
 
