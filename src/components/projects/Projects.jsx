@@ -21,10 +21,7 @@ export default function Projects({ setRerender }) {
       ? items
       : items.filter((item) => item.category === selectedCategory);
   return (
-    <div id="projets" className="pt-36">
-      <h1 className="text-white text-4xl font-bold text-start my-8">
-        NOS PROJETS
-      </h1>
+    <div id="projets" className="">
       <div className="flex flex-wrap justify-center mb-8 gap-8">
         {categories.map((category, idx) =>
           selectedCategory == category ? (
@@ -112,7 +109,9 @@ const items = [
     description:
       " A stylized beetle vehicle concept design with a twist, inspired by the classic Volkswagen Beetle.",
     category: "Modélisation 3D",
-    header: <img src={beetle} className="h-44 object-fit" alt="beetle" />,
+    header: (
+      <img src={beetle} className=" h-full w-full object-fill" alt="beetle" />
+    ),
     images: [
       beetle,
       beetle1,
@@ -130,7 +129,7 @@ const items = [
       "A facial rig test for a stylized giraffe character, exploring the possibilities of facial expressions.",
     category: "Modélisation 3D",
     header: (
-      <img src={girrafe} className="h-44 object-fit w-full" alt="girrafe" />
+      <img src={girrafe} className="h-full object-fit w-full" alt="girrafe" />
     ),
     images: [girrafe, girrafe1, girrafe2, girrafe3, girrafe4],
   },
@@ -140,7 +139,7 @@ const items = [
       "A stylized raccoon character design, exploring the possibilities of character design.",
     category: "Modélisation 3D",
     header: (
-      <img src={raccoon} className="h-44 object-fit w-full" alt="raccoon" />
+      <img src={raccoon} className="h-full object-fit w-full" alt="raccoon" />
     ),
     images: [raccoon, raccoon1, raccoon2, raccoon3, raccoon4],
   },
@@ -150,7 +149,9 @@ const items = [
     description:
       "A character creation process, exploring the possibilities of character design.",
     category: "Modélisation 3D",
-    header: <img src={ahmed} className="h-44 object-fit w-full" alt="ahmed" />,
+    header: (
+      <img src={ahmed} className="h-full object-fit w-full" alt="ahmed" />
+    ),
     images: [ahmed, ahmed1, ahmed2, ahmed3],
   },
   {
@@ -159,7 +160,7 @@ const items = [
       "A character creation process, exploring the possibilities of character design.",
     category: "Modélisation 3D",
     header: (
-      <img src={ahmedV} className="h-44 object-fit w-full" alt="ahmedV" />
+      <img src={ahmedV} className="h-full object-fit w-full" alt="ahmedV" />
     ),
     images: [ahmedV, ahmedV1, ahmedV2],
   },
@@ -167,7 +168,7 @@ const items = [
     title: "Harley Davidson Nightrod",
     description: " 3D Nightrod motorcycle on Maya using different references.",
     category: "Modélisation 3D",
-    header: <img src={nightrod} className="h-44 object-fit" alt="nightrod" />,
+    header: <img src={nightrod} className="h-full object-fit" alt="nightrod" />,
     images: [
       nightrod,
       nightrod1,

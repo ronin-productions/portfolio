@@ -13,7 +13,7 @@ export const BentoGrid = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mx-auto ",
+        "grid md:auto-rows-[16rem] grid-cols-1 md:grid-cols-3 gap-3 max-w-7xl mx-auto ",
         className
       )}
     >
@@ -25,31 +25,28 @@ export const BentoGrid = ({ className, children }) => {
 export const BentoGridItem = ({
   className,
   title,
-  description,
+  // description,
   header,
   images,
 }) => {
   const OPTIONS = {};
 
   return (
-    <div className="py-40 flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <Modal className="">
         <ModalTrigger
           className={cn(
-            "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input shadow-none p-4 border-white/[0.2] bg-secondary border justify-between flex flex-col cursor-pointer h-72",
+            "p-0 relative row-span-1 group/bento hover:shadow-xl transition duration-200 cursor-pointer w-full h-full group rounded-none",
             className
           )}
         >
+          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-200"></div>
           {header}
-          <div className="group-hover/bento:translate-x-2 transition duration-200 text-start">
-            <div className="font-sans font-bold text-neutral-200 mb-1 mt-2">
-              {title}
-            </div>
-            <div className="font-sans font-normal text-xs text-neutral-300">
-              {description}
-            </div>
-          </div>
+          <h4 className="text-lg font-bold text-center mb-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            {title}
+          </h4>
         </ModalTrigger>
+
         <ModalBody>
           <ModalContent className="relative overflow-hidden bg-secondary !border-0">
             <h4 className="text-lg md:text-2xl  font-bold text-center mb-8">

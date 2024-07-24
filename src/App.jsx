@@ -17,9 +17,9 @@ function App() {
       <Hero />
       <TracingBeam className="px-6" rerender={rerender}>
         <div className="antialiased pt-4 relative h-full">
-          <About />
-          <Services />
           <Projects setRerender={setRerender} />
+          <Services />
+          <About />
           <Contact />
         </div>
       </TracingBeam>
