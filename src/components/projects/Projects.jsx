@@ -27,7 +27,7 @@ export default function Projects({ setRerender }) {
           selectedCategory == category ? (
             <button
               key={idx}
-              className="relative inline-flex h-12 overflow-hidden rounded-xl p-[1px] "
+              className="relative inline-flex h-12 overflow-hidden rounded-xl p-[1px]"
             >
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
               <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
@@ -49,17 +49,23 @@ export default function Projects({ setRerender }) {
         )}
       </div>
       <BentoGrid className="max-w-7xl mx-auto">
-        {filteredItems.map((item, i) => (
-          <BentoGridItem
-            key={i}
-            title={item.title}
-            description={item.description}
-            header={item.header}
-            images={item.images}
-            icon={item.icon}
-            className={i === 2 || i === 7 ? "md:col-span-2" : ""}
-          />
-        ))}
+        {filteredItems.length > 0 ? (
+          filteredItems.map((item, i) => (
+            <BentoGridItem
+              key={i}
+              title={item.title}
+              description={item.description}
+              header={item.header}
+              images={item.images}
+              icon={item.icon}
+              className={i === 2 || i === 7 ? "md:col-span-2" : ""}
+            />
+          ))
+        ) : (
+          <div className="text-center text-white text-md font-bold">
+            Aucun projet pour cette catégorie
+          </div>
+        )}
       </BentoGrid>
     </div>
   );

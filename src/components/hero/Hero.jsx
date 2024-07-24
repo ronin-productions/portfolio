@@ -27,7 +27,7 @@ export default function Hero() {
           ease: "easeInOut",
         }}
         className="text-center font-medium text-transparent text-4xl md:text-8xl absolute top-[22rem] left-1/4 transform -translate-x-1/4 -translate-y-1/2
-          bg-clip-text tracking-tight bg-gradient-to-br from-slate-300 to-slate-500"
+          bg-clip-text tracking-tight bg-gradient-to-br from-slate-200 to-slate-400"
       >
         RONIN PRODUCTIONS <br />
         <div className="md:text-6xl text-2xl z-50">
