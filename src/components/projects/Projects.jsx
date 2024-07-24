@@ -59,7 +59,6 @@ export default function Projects({ setRerender }) {
             description={item.description}
             header={item.header}
             images={item.images}
-            url={item.url}
             icon={item.icon}
             className={i === 2 || i === 7 ? "md:col-span-2" : ""}
           />
@@ -114,7 +113,6 @@ const items = [
       " A stylized beetle vehicle concept design with a twist, inspired by the classic Volkswagen Beetle.",
     category: "Modélisation 3D",
     header: <img src={beetle} className="h-44 object-fit" alt="beetle" />,
-    url: "https://khaled_3dx.artstation.com/projects/Alz3ky",
     images: [
       beetle,
       beetle1,
@@ -134,7 +132,6 @@ const items = [
     header: (
       <img src={girrafe} className="h-44 object-fit w-full" alt="girrafe" />
     ),
-    url: "https://khaled_3dx.artstation.com/projects/5v3G2z",
     images: [girrafe, girrafe1, girrafe2, girrafe3, girrafe4],
   },
   {
@@ -145,7 +142,6 @@ const items = [
     header: (
       <img src={raccoon} className="h-44 object-fit w-full" alt="raccoon" />
     ),
-    url: "https://khaled_3dx.artstation.com/projects/xDke3m",
     images: [raccoon, raccoon1, raccoon2, raccoon3, raccoon4],
   },
 
@@ -155,7 +151,6 @@ const items = [
       "A character creation process, exploring the possibilities of character design.",
     category: "Modélisation 3D",
     header: <img src={ahmed} className="h-44 object-fit w-full" alt="ahmed" />,
-    url: "https://khaled_3dx.artstation.com/projects/obGB6B",
     images: [ahmed, ahmed1, ahmed2, ahmed3],
   },
   {
@@ -166,16 +161,13 @@ const items = [
     header: (
       <img src={ahmedV} className="h-44 object-fit w-full" alt="ahmedV" />
     ),
-    url: "https://khaled_3dx.artstation.com/projects/qeJA9R",
     images: [ahmedV, ahmedV1, ahmedV2],
   },
   {
     title: "Harley Davidson Nightrod",
-    description:
-      " 3D Nightrod motorcycle on Maya using different references.",
+    description: " 3D Nightrod motorcycle on Maya using different references.",
     category: "Modélisation 3D",
     header: <img src={nightrod} className="h-44 object-fit" alt="nightrod" />,
-    url: "https://khaled_3dx.artstation.com/projects/nQP6A1",
     images: [
       nightrod,
       nightrod1,

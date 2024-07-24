@@ -27,7 +27,6 @@ export const BentoGridItem = ({
   title,
   description,
   header,
-  url,
   images,
 }) => {
   const OPTIONS = {};
@@ -56,14 +55,6 @@ export const BentoGridItem = ({
             <h4 className="text-lg md:text-2xl  font-bold text-center mb-8">
               {title}
             </h4>
-            <a
-              href={url}
-              className=" flex justify-end items-top underline mb-2"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Go to project
-            </a>
             <div className="flex md:flex-row flex-col items-center md:items-start justify-between gap-16 w-fit">
               {/* Product images */}
               <div className="">
