@@ -14,7 +14,7 @@ export default function Hero() {
         loop
         controls={false}
         background
-        className=" mb-16"
+        className="mb-16"
         responsive
       />
 
